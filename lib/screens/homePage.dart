@@ -1,9 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:lava/screens/bookingPage.dart';
 import 'package:lava/screens/cardPage.dart';
 import 'package:lava/screens/morePage.dart';
 import 'package:lava/screens/store.dart';
+import 'package:lava/views/appBarWidget.dart';
 import 'package:lava/views/constantsClolor.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,11 +27,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: WhiteColor,
-        elevation: 0,
-        leading: Image.asset('assets/images/egypt logo.png'),
-      ),
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: WhiteColor,
