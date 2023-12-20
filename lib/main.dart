@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:lava/screens/homePage.dart';
-import 'package:lava/screens/login.dart';
 import 'package:lava/screens/morePage.dart';
 import 'package:lava/screens/register.dart';
+import 'package:lava/screens/signIn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Lava',
       theme: ThemeData(
         fontFamily: 'Roboto',
-        // scaffoldBackgroundColor: Color(0xffFFFFFF),
+        //scaffoldBackgroundColor: Color(0xffFFFFFF),
       ),
       home: HomePage(),
     );

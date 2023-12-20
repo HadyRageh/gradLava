@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lava/screens/homePage.dart';
-import 'package:lava/screens/login.dart';
+import 'package:lava/screens/signIn.dart';
 import 'package:lava/views/TextButtonBSkip.dart';
 import 'package:lava/views/constantsClolor.dart';
 
@@ -76,16 +76,16 @@ class AccountBelow extends StatelessWidget {
             children: [
               TextButtonBSkip(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => Login()),
+                    MaterialPageRoute(builder: (context) => SignIn()),
                   );
                 },
                 textName: 'Back',
               ),
               TextButtonBSkip(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => HomePage()),
                   );
